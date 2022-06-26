@@ -2,9 +2,9 @@
 
 namespace Happytodev\FilamentSocialNetworks\Tests;
 
+use Happytodev\FilamentSocialNetworks\FilamentSocialNetworksServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Happytodev\FilamentSocialNetworks\FilamentSocialNetworksServiceProvider;
 
 class TestCase extends Orchestra
 {
