@@ -3,8 +3,8 @@
 namespace Happytodev\FilamentSocialNetworks;
 
 use Filament\FilamentServiceProvider;
-use Spatie\LaravelPackageTools\Package;
 use Happytodev\FilamentSocialNetworks\Commands\FilamentSocialNetworksCommand;
+use Spatie\LaravelPackageTools\Package;
 
 class FilamentSocialNetworksServiceProvider extends FilamentServiceProvider
 {
