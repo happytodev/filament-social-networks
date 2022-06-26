@@ -2,9 +2,9 @@
 
 namespace Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource\Pages;
 
-use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\EditRecord;
+use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
 
 class EditSocialNetwork extends EditRecord
 {

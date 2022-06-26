@@ -3,9 +3,9 @@
 namespace Happytodev\FilamentSocialNetworks;
 
 use Filament\PluginServiceProvider;
-use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
-use Happytodev\FilamentSocialNetworks\Components\FilamentSocialNetworks;
 use Happytodev\FilamentSocialNetworks\Commands\FilamentSocialNetworksCommand;
+use Happytodev\FilamentSocialNetworks\Components\FilamentSocialNetworks;
+use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
 use Spatie\LaravelPackageTools\Package;
 
 class FilamentSocialNetworksServiceProvider extends PluginServiceProvider

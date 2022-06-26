@@ -2,9 +2,9 @@
 
 namespace Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource\Pages;
 
-use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
+use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
 
 class ListSocialNetworks extends ListRecords
 {

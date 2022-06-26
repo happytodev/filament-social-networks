@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Orbit\Concerns\Orbital;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Schema\Blueprint;
+use Orbit\Concerns\Orbital;
 
 class SocialNetwork extends Model
 {
@@ -28,7 +28,7 @@ class SocialNetwork extends Model
         'name',
         'icon',
         'url',
-        'is_active'
+        'is_active',
     ];
 
     /**
@@ -46,7 +46,4 @@ class SocialNetwork extends Model
      */
     protected $casts = [
     ];
-
-
-
 }
