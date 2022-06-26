@@ -2,9 +2,8 @@
 
 namespace Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource\Pages;
 
-use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
-use Filament\Pages\Actions;
 use Filament\Resources\Pages\CreateRecord;
+use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
 
 class CreateSocialNetwork extends CreateRecord
 {

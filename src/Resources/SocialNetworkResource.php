@@ -2,16 +2,12 @@
 
 namespace Happytodev\FilamentSocialNetworks\Resources;
 
-use Closure;
-use Filament\Forms;
-use Filament\Tables;
-use Filament\Resources\Form;
 use App\Models\SocialNetwork;
-use Filament\Resources\Table;
+use Filament\Forms;
+use Filament\Resources\Form;
 use Filament\Resources\Resource;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\SocialNetworkResource\RelationManagers;
+use Filament\Resources\Table;
+use Filament\Tables;
 use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource\Pages;
 
 class SocialNetworkResource extends Resource
