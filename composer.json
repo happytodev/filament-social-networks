@@ -1,24 +1,25 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "happytodev/filament-social-networks",
+    "description": "Filament plugin to set and display your social networks on your website",
     "keywords": [
-        ":vendor_name",
+        "happytodev",
         "laravel",
-        ":package_slug"
+        "filament-social-networks"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/happytodev/filament-social-networks",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Frédéric Blanc",
+            "email": "frederic.blanc@itanea.fr",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.9.2",
-        "illuminate/contracts": "^9.0"
+        "filament/filament": "^2.13",
+        "illuminate/contracts": "^9.0",
+        "spatie/laravel-package-tools": "^1.9.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.8",
@@ -35,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Happytodev\\FilamentSocialNetworks\\": "src",
+            "Happytodev\\FilamentSocialNetworks\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Happytodev\\FilamentSocialNetworks\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,15 +52,19 @@
         "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Happytodev\\FilamentSocialNetworks\\FilamentSocialNetworksServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentSocialNetworks": "Happytodev\\FilamentSocialNetworks\\Facades\\FilamentSocialNetworks"
             }
         }
     },
