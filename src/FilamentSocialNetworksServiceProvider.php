@@ -2,12 +2,22 @@
 
 namespace Happytodev\FilamentSocialNetworks;
 
-use Filament\FilamentServiceProvider;
+// use App\View\Components\Happytodev\FilamentSocialNetworks;
+use Filament\PluginServiceProvider;
 use Spatie\LaravelPackageTools\Package;
+// use Filament\FilamentServiceProvider;
+use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource;
+use Happytodev\FilamentSocialNetworks\Components\FilamentSocialNetworks;
 use Happytodev\FilamentSocialNetworks\Commands\FilamentSocialNetworksCommand;
 
-class FilamentSocialNetworksServiceProvider extends FilamentServiceProvider
+//use Happytodev\FilamentSocialNetworks\FilamentSocialNetworks as FilamentSocialNetworksFilamentSocialNetworks;
+
+class FilamentSocialNetworksServiceProvider extends PluginServiceProvider
 {
+    protected array $resources = [
+        SocialNetworkResource::class,
+    ];
+
     public function configurePackage(Package $package): void
     {
         /*
@@ -17,8 +27,10 @@ class FilamentSocialNetworksServiceProvider extends FilamentServiceProvider
          */
         $package
             ->name('filament-social-networks')
+            ->hasAssets()
             ->hasConfigFile()
             ->hasViews()
+            ->hasViewComponents('happytodev', FilamentSocialNetworks::class)
             ->hasMigration('create_filament-social-networks_table')
             ->hasCommand(FilamentSocialNetworksCommand::class);
     }
