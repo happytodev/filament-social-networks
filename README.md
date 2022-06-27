@@ -26,12 +26,30 @@ You can install the package via composer:
 composer require happytodev/filament-social-networks
 ```
 
-You can publish and run the migrations with:
+### Database
+#### Using filament-social-networks with Filament and Orbit driver
+
+If you use Orbit as database driver, there is no migrations to launch.
+
+Instead, you have to :
+
+- install Orbit
+- publish model file directly by using :
+
+```bash
+php artisan vendor:publish --tag="filament-social-networks-models"
+```
+
+### Using filament-social-networks with classical database drivers
+
+You have to publish and run the migrations with:
 
 ```bash
 php artisan vendor:publish --tag="filament-social-networks-migrations"
 php artisan migrate
 ```
+
+### Others publishable files
 
 You can publish the config file with:
 
@@ -54,10 +72,19 @@ php artisan vendor:publish --tag="filament-social-networks-views"
 
 ## Usage
 
+Connect to your Filament dashboard.
+
+You will see a new entry in the menu `Social Networks`
+
+You can add every available social networks
+
+When you're satisfied, you can use where you want the Blade component provided by this plugin in your template file : 
+
 ```php
-$filamentSocialNetworks = new Happytodev\FilamentSocialNetworks();
-echo $filamentSocialNetworks->echoPhrase('Hello, Happytodev!');
+<x-happytodev-filament-social-networks />
 ```
+
+
 
 ## Testing
 

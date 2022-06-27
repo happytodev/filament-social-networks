@@ -14,6 +14,20 @@ class FilamentSocialNetworksServiceProvider extends PluginServiceProvider
         SocialNetworkResource::class,
     ];
 
+    public function boot() 
+    {
+        parent::boot();
+
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/Models/SocialNetworkOrbital.php' => 'app/Models/SocialNetwork.php',
+            ], 'filament-social-networks-model-with-orbit');
+            $this->publishes([
+                __DIR__ . '/Models/SocialNetworkClassical.php' => 'app/Models/SocialNetwork.php',
+            ], 'filament-social-networks-model-classical');
+        }
+    }
+
     public function configurePackage(Package $package): void
     {
         /*

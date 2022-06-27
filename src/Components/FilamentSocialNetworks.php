@@ -18,7 +18,7 @@ class FilamentSocialNetworks extends Component
      */
     public function __construct()
     {
-
+        
         // Get only active social network
         $this->socialNetworks = SocialNetwork::where('is_active', true)->get();
     }
