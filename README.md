@@ -33,11 +33,16 @@ If you use Orbit as database driver, there is no migrations to launch.
 
 Instead, you have to :
 
-- install Orbit
+- install Orbit 
+
+```bash
+composer require ryangjchandler/orbit
+```
+
 - publish model file directly by using :
 
 ```bash
-php artisan vendor:publish --tag="filament-social-networks-models"
+php artisan vendor:publish --tag="filament-social-networks-model-with-orbit"
 ```
 
 ### Using filament-social-networks with classical database drivers
@@ -51,7 +56,13 @@ php artisan migrate
 
 ### Others publishable files
 
-You can publish the config file with:
+To use default picture for Social Network, you have to publish assets : 
+
+```bash
+php artisan vendor:publish --tag="filament-social-networks-assets"
+```
+
+Optionnaly, you can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="filament-social-networks-config"
@@ -83,8 +94,6 @@ When you're satisfied, you can use where you want the Blade component provided b
 ```php
 <x-happytodev-filament-social-networks />
 ```
-
-
 
 ## Testing
 
