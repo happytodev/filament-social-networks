@@ -14,7 +14,7 @@ class FilamentSocialNetworksServiceProvider extends PluginServiceProvider
         SocialNetworkResource::class,
     ];
 
-    public function boot() 
+    public function boot()
     {
         parent::boot();
 
