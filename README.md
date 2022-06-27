@@ -1,7 +1,7 @@
 
 [<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
 
-# Filament plugin to set and display your social networks on your website
+# Filament plugin to set and display your social networks icons on your website
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/happytodev/filament-social-networks.svg?style=flat-square)](https://packagist.org/packages/happytodev/filament-social-networks)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/happytodev/filament-social-networks/run-tests?label=tests)](https://github.com/happytodev/filament-social-networks/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -12,11 +12,10 @@ This is where your description should go. Limit it to a paragraph or two. Consid
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-social-networks.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-social-networks)
+If you want and if you can, you can [sponsorship](https://github.com/sponsors/happytodev) this project. 
 
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
+It will help me a lot ;-)
 
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
