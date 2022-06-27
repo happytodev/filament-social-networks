@@ -53,6 +53,12 @@ php artisan vendor:publish --tag="filament-social-networks-migrations"
 php artisan migrate
 ```
 
+- publish model file directly by using :
+
+```bash
+php artisan vendor:publish --tag="filament-social-networks-model-classical"
+```
+
 ### Others publishable files
 
 To use default picture for Social Network, you have to publish assets : 
