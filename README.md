@@ -10,6 +10,26 @@
 
 This is a filamentphp plugin. It helps you to define the social networks you use in the filament backend, and display it on your website using Blade component provided.
 
+![SCR-20220627-oj1](https://user-images.githubusercontent.com/425998/176250855-ed1c5a7a-f087-4542-9dd6-ee6d80f2b5f9.png)
+_Display your social networks on your front with the help of Blade component provided in this plugin_
+
+![SCR-20220628-pu3](https://user-images.githubusercontent.com/425998/176250895-86ba5af1-05b5-4570-81ec-cb2c7cd2ad22.png)
+_List of all of your social networks_
+
+![SCR-20220628-puf](https://user-images.githubusercontent.com/425998/176250917-c31b71c2-a5de-432a-a5e9-147c1469200a.png)
+_Detail of one of your social network_
+
+## Functionnalities
+
+- easy to install as Filament plugin (see below)
+- possibility to use OrbitPHP or classical driver database
+- possibility to add, edit, remove, list social networks
+- social networks icons provided by default via svgporn
+- possibility to add you custom icons if you want
+- possibility to octivate or not a social network
+- by default link open in a new tab (target='_blank')
+
+
 ## Support us
 
 If you want and if you can, you can [sponsorship](https://github.com/sponsors/happytodev) this project. 
