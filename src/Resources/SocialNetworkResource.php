@@ -2,13 +2,12 @@
 
 namespace Happytodev\FilamentSocialNetworks\Resources;
 
-use Filament\Forms;
-use Filament\Tables;
-use Illuminate\Support\Str;
-use Filament\Resources\Form;
 use App\Models\SocialNetwork;
-use Filament\Resources\Table;
+use Filament\Forms;
+use Filament\Resources\Form;
 use Filament\Resources\Resource;
+use Filament\Resources\Table;
+use Filament\Tables;
 use Happytodev\FilamentSocialNetworks\Resources\SocialNetworkResource\Pages;
 
 class SocialNetworkResource extends Resource
@@ -23,27 +22,27 @@ class SocialNetworkResource extends Resource
             ->schema([
                 Forms\Components\Select::make('name')
                     ->options([
-                        'devianart'     => 'DevianArt',
-                        'discord'       => 'Discord',
-                        'facebook'      => 'Facebook',
-                        'github'        => 'Github',
-                        'instagram'     => 'Instagram',
-                        'linkedin'      => 'LinkedIn',
-                        'medium'        => 'Medium',
-                        'pinterest'     => 'Pinterest',
-                        'reddit'        => 'Reddit',
-                        'skype'         => 'Skype',
-                        'snapchat'      => 'Snapchat',
-                        'soundcloud'    => 'SoundCloud',
-                        'telegram'      => 'Telegram',
-                        'tiktok'        => 'TikTok',
-                        'tumblr'        => 'Tumblr',
-                        'twitch'        => 'Twitch',
-                        'twitter'       => 'Twitter',
-                        'vimeo'         => 'Vimeo',
-                        'wattpad'       => 'WattPad',
-                        'whatsapp'      => 'WhatsApp',
-                        'youtube'       => 'Youtube',
+                        'devianart' => 'DevianArt',
+                        'discord' => 'Discord',
+                        'facebook' => 'Facebook',
+                        'github' => 'Github',
+                        'instagram' => 'Instagram',
+                        'linkedin' => 'LinkedIn',
+                        'medium' => 'Medium',
+                        'pinterest' => 'Pinterest',
+                        'reddit' => 'Reddit',
+                        'skype' => 'Skype',
+                        'snapchat' => 'Snapchat',
+                        'soundcloud' => 'SoundCloud',
+                        'telegram' => 'Telegram',
+                        'tiktok' => 'TikTok',
+                        'tumblr' => 'Tumblr',
+                        'twitch' => 'Twitch',
+                        'twitter' => 'Twitter',
+                        'vimeo' => 'Vimeo',
+                        'wattpad' => 'WattPad',
+                        'whatsapp' => 'WhatsApp',
+                        'youtube' => 'Youtube',
                     ])
                     ->searchable()
                     ->reactive()
@@ -52,18 +51,22 @@ class SocialNetworkResource extends Resource
                             case 'discord':
                                 # code...
                                 $set('url', 'https://discord.gg/{YourChannel}');
+
                                 break;
                             case 'telegram':
                                 # code...
                                 $set('url', 'https://t.me/{YourUsername}');
+
                                 break;
                             case 'tumblr':
                                 # code...
                                 $set('url', '{YourUsername}.tumblr.com');
+
                                 break;
                             default:
                                 # code...
                                 $set('url', 'https://www.' . $state . '.com/');
+
                                 break;
                         }
                     })
