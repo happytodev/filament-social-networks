@@ -21,9 +21,30 @@ _Detail of one of your social network_
 
 ## Functionnalities
 
+- possibility to add, modify, delete, list social networks among the following 21 : 
+    - DevianArt
+    - Discord
+    - Facebook
+    - Github
+    - Instagram
+    - LinkedIn
+    - Medium
+    - Pinterest
+    - Reddit
+    - Skype
+    - Snapchat
+    - Soundcloud
+    - Telegram
+    - TikTok
+    - Tumblr
+    - Twitch
+    - Twitter
+    - Vimeo
+    - WattPad
+    - WhatsApp
+    - Youtube
 - easy to install as Filament plugin (see below)
 - possibility to use OrbitPHP or classical driver database
-- possibility to add, edit, remove, list social networks
 - social networks icons provided by default via svgporn
 - possibility to add your custom icons if you want
 - possibility to activate or not a social network
@@ -31,10 +52,12 @@ _Detail of one of your social network_
 
 ## On the roadmap
 
-- add more social networks
-- improve form appearance
-- deactivate already selected social network
-- provide more Blade component to display on front
+- [x] add more social networks
+- [ ] improve form appearance
+- [ ] deactivate already selected social network
+- [ ] provide more Blade component to display on front
+- [ ] add localization
+- [x] add possibility to search the social network in the list
 - if you have an idea of improvment, let me know !
 
 ## Support us
