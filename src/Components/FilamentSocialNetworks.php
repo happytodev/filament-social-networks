@@ -1,7 +1,5 @@
 <?php
 
-// namespace App\View\Components\Happytodev;
-
 namespace Happytodev\FilamentSocialNetworks\Components;
 
 use App\Models\SocialNetwork;
