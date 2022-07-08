@@ -30,7 +30,7 @@ class SocialNetworkResource extends Resource
                     ->schema([
                         Forms\Components\Select::make('name')
                             ->options([
-                                'devianart' => 'DevianArt',
+                                'deviantart' => 'DeviantArt',
                                 'discord' => 'Discord',
                                 'facebook' => 'Facebook',
                                 'github' => 'Github',
