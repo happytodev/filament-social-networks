@@ -22,7 +22,7 @@ _Detail of one of your social network_
 ## Functionnalities
 
 - possibility to add, modify, delete, list social networks among the following 21 : 
-    - DevianArt
+    - DeviantArt
     - Discord
     - Facebook
     - Github
@@ -142,14 +142,27 @@ Connect to your Filament dashboard.
 
 You will see a new entry in the menu `Social Networks`
 
-You can add every available social networks
+By clicking on the 'New social network' button (in the top right corner), you can add a new group of social networks.
 
-When you're satisfied, you can use where you want the Blade component provided by this plugin in your template file : 
+You have to give it a name that you need after to display it.
+
+You can, also, decide to let it inactive for the moment.
+
+In that group, you can add every available social networks.
+You can order them simply by drag and drop.
+Every social network added to a group can be active (by default) or inactive.
+
+You can collapse one, many or all Social Networks you've set if you need
+
+Don't forget to save when you are satisfied by your social network group.
+
+When you're satisfied, you can use everywhere you want the Blade component provided by this plugin in your template file : 
 
 ```php
-<x-happytodev-filament-social-networks />
+<x-happytodev-filament-social-networks name="video"/>
 ```
 
+Et voilà !
 ## Testing
 
 ```bash
