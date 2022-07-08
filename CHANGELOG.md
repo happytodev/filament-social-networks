@@ -2,13 +2,21 @@
 
 All notable changes to `filament-social-networks` will be documented in this file.
 
+## v0.2.0 - 2022-07-08
+
+Second beta
+
+- This version is coming with a major change. The plugin will use repeater instead of classical forms. This allows you to order social networks in order you want just by drag and drop 
+- Now, you can now set one or more group of social network if you want. For example, you can set a group of 'video' networks with Twich, TikTok and Youtube and an another one with more traditionnal network like 'facebook', 'instagram', 'twitter' and place them in different places of your websites with associated blade components.
+- Social networks could be collapsed, if you need place on your screen
+- Blade component could be use attribute "name" to choose whichn of your social networks group you want to display (ex.: `<x-happytodev-filament-social-networks name="video"/>`)
 ## v0.1.0 - 2022-06-30 
 
 First Beta version.
 
 - Add searchable method to allow user to find quickly his favourite social network in the growing list
 - Increase social networks to 21 by adding the following social networks :
-    - DevianArt
+    - DeviantArt
     - Discord
     - LinkedIn
     - Medium

@@ -1,7 +1,5 @@
 <?php
 
-// namespace App\View\Components\Happytodev;
-
 namespace Happytodev\FilamentSocialNetworks\Components;
 
 use App\Models\SocialNetwork;
@@ -11,16 +9,24 @@ class FilamentSocialNetworks extends Component
 {
     public $socialNetworks;
 
+    public $name;
+
     /**
      * Create a new component instance.
      *
+     * @param string $name
+     *
      * @return void
      */
-    public function __construct()
+    public function __construct($name = null)
     {
+        // Check if a name of social network group is given
+        // if YES return the corresponding social network group
+        // if NO return the first active social network group
+        // if none is active return null
+        $whereClause = $name ? [['is_active', '=', 1], ['name', '=', $name]] : [['is_active', '=', 1]];
 
-        // Get only active social network
-        $this->socialNetworks = SocialNetwork::where('is_active', true)->get();
+        $this->socialNetworks = SocialNetwork::where($whereClause)->first();
     }
 
     /**

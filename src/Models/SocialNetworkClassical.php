@@ -11,9 +11,8 @@ class SocialNetwork extends Model
     {
         $table->id();
         $table->string('name');
-        $table->string('icon')->nullable();
-        $table->string('url')->nullable();
         $table->boolean('is_active')->default(true);
+        $table->json('social_network');
     }
 
     /**
@@ -23,9 +22,8 @@ class SocialNetwork extends Model
      */
     protected $fillable = [
         'name',
-        'icon',
-        'url',
         'is_active',
+        'social_network',
     ];
 
     /**
@@ -42,5 +40,6 @@ class SocialNetwork extends Model
      * @var array
      */
     protected $casts = [
+        'social_network' => 'array',
     ];
 }
