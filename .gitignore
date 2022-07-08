@@ -2,7 +2,7 @@
 .php_cs
 .php_cs.cache
 .phpunit.result.cache
-.code-workspace
+filament-social-networks.code-workspace
 build
 composer.lock
 coverage
