@@ -88,11 +88,11 @@ class SocialNetworkResource extends Resource
                             ->url()
                             ->columnSpan(2),
                         Forms\Components\FileUpload::make('icon')
-                            ->columnSpan(2)
+                            ->columnSpan(2),
                 ])
                 ->columnSpan(2)
                 ->collapsible()
-                ->createItemButtonLabel('Add a new social network to this group')
+                ->createItemButtonLabel('Add a new social network to this group'),
             ]);
     }
 
