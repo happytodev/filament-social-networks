@@ -101,8 +101,6 @@ class SocialNetworkResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\ImageColumn::make('icon'),
-                Tables\Columns\TextColumn::make('url'),
                 Tables\Columns\BooleanColumn::make('is_active'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),
