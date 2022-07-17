@@ -2,6 +2,10 @@
 
 All notable changes to `filament-social-networks` will be documented in this file.
 
+## v0.2.1-beta - 2022-07-17
+
+- Fix image path problem (missing /)
+
 ## v0.2.0-beta - 2022-07-15
 
 ### Second beta
