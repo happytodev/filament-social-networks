@@ -5,7 +5,7 @@
         
     <a href="{{ $network['url'] }}" target="_blank">
         <img 
-        src="{{ $network['icon'] ? $network['icon'] : 'vendor/filament-social-networks/images/' . $network['name'] . '.svg' }}" 
+        src="{{ $network['icon'] ? $network['icon'] : '/vendor/filament-social-networks/images/' . $network['name'] . '.svg' }}" 
         alt="{{ $network['name'] }}"
         class="w-5 h-5 @if (! $loop->first) ml-3 @endif">
     </a>
