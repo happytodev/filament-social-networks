@@ -2,6 +2,10 @@
 
 All notable changes to `filament-social-networks` will be documented in this file.
 
+## v0.2.1 - 2022-07-17
+
+Fix an image path problem
+
 ## v0.2.0-beta - 2022-07-15
 
 ### Second beta
@@ -27,21 +31,37 @@ First Beta version.
 - Add searchable method to allow user to find quickly his favourite social network in the growing list
 - Increase social networks to 21 by adding the following social networks :
 - - DeviantArt
+- 
 - - Discord
+- 
 - - LinkedIn
+- 
 - - Medium
+- 
 - - Pinterest
+- 
 - - Reddit
+- 
 - - Skype
+- 
 - - Snapchat
+- 
 - - Soundcloud
+- 
 - - Telegram
+- 
 - - TikTok
+- 
 - - Tumblr
+- 
 - - Twitch
+- 
 - - Vimeo
+- 
 - - WattPad
+- 
 - - WhatsApp
+- 
 - 
 - Add reactivity to the url field to propose to user a template adapted to the social network, when it's possible (WIP)
 
